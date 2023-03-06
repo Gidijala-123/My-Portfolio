@@ -1,0 +1,578 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title DevFolio - Developer Portfolio Template
+    meta(content='width=device-width, initial-scale=1.0' name='viewport')
+    meta(content='Free Website Template' name='keywords')
+    meta(content='Free Website Template' name='description')
+    // Favicon
+    link(href='img/favicon.ico' rel='icon')
+    // Google Font
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap' rel='stylesheet')
+    // CSS Libraries
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' rel='stylesheet')
+    link(href='lib/animate/animate.min.css' rel='stylesheet')
+    link(href='lib/owlcarousel/assets/owl.carousel.min.css' rel='stylesheet')
+    link(href='lib/lightbox/css/lightbox.min.css' rel='stylesheet')
+    // Template Stylesheet
+    link(href='css/style.css' rel='stylesheet')
+  body(data-spy='scroll' data-target='.navbar' data-offset='51')
+    // Nav Bar Start
+    .navbar.navbar-expand-lg.bg-light.navbar-light
+      .container-fluid
+        a.navbar-brand(href='index.html') DevFolio
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarCollapse')
+          span.navbar-toggler-icon
+        #navbarCollapse.collapse.navbar-collapse.justify-content-between
+          .navbar-nav.ml-auto
+            a.nav-item.nav-link.active(href='#home') Home
+            a.nav-item.nav-link(href='#about') About
+            a.nav-item.nav-link(href='#service') Service
+            a.nav-item.nav-link(href='#experience') Experience
+            a.nav-item.nav-link(href='#portfolio') Portfolio
+            a.nav-item.nav-link(href='#price') Price
+            a.nav-item.nav-link(href='#review') Review
+            a.nav-item.nav-link(href='#team') Team
+            a.nav-item.nav-link(href='#blog') Blog
+            a.nav-item.nav-link(href='#contact') Contact
+    // Nav Bar End
+    // Hero Start
+    #home.hero
+      .container-fluid
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            .hero-content
+              .hero-text
+                p I'm
+                h1 Kate Winslet
+                h2
+                .typed-text Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer
+              .hero-btn
+                a.btn(href='') Hire Me
+                a.btn(href='') Contact Me
+          .col-sm-12.col-md-6.d-none.d-md-block
+            .hero-image
+              img(src='img/hero.png' alt='Hero Image')
+    // Hero End
+    // About Start
+    #about.about.wow.fadeInUp(data-wow-delay='0.1s')
+      .container-fluid
+        .row.align-items-center
+          .col-lg-6
+            .about-img
+              img(src='img/about.jpg' alt='Image')
+          .col-lg-6
+            .about-content
+              .section-header.text-left
+                p Learn About Me
+                h2 10 Years Experience
+              .about-text
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
+              .skills
+                .skill-name
+                  p Web Design
+                  p 85%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100')
+                .skill-name
+                  p Web Development
+                  p 95%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='95' aria-valuemin='0' aria-valuemax='100')
+                .skill-name
+                  p Apps Design
+                  p 90%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100')
+                .skill-name
+                  p Apps Development
+                  p 85%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100')
+              a.btn(href='') Learn More
+    // About End
+    // Service Start
+    #service.service
+      .container
+        .section-header.text-center.wow.zoomIn(data-wow-delay='0.1s')
+          p What I do
+          h2 Awesome Quality Services
+        .row
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.0s')
+            .service-item
+              .service-icon
+                i.fa.fa-laptop
+              .service-text
+                h3 Web Design
+                p
+                  | Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.2s')
+            .service-item
+              .service-icon
+                i.fa.fa-laptop-code
+              .service-text
+                h3 Web Development
+                p
+                  | Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.4s')
+            .service-item
+              .service-icon
+                i.fab.fa-android
+              .service-text
+                h3 Apps Design
+                p
+                  | Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.6s')
+            .service-item
+              .service-icon
+                i.fab.fa-apple
+              .service-text
+                h3 Apps Development
+                p
+                  | Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+    // Service End
+    // Experience Start
+    #experience.experience
+      .container
+        header.section-header.text-center.wow.zoomIn(data-wow-delay='0.1s')
+          p My Resume
+          h2 Working Experience
+        .timeline
+          .timeline-item.left.wow.slideInLeft(data-wow-delay='0.1s')
+            .timeline-text
+              .timeline-date 2045 - 2050
+              h2 Web Developer
+              h4 Soft Agency, San Francisco, CA
+              p
+                | Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+          .timeline-item.right.wow.slideInRight(data-wow-delay='0.1s')
+            .timeline-text
+              .timeline-date 2045 - 2050
+              h2 Web Developer
+              h4 Soft Agency, San Francisco, CA
+              p
+                | Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+          .timeline-item.left.wow.slideInLeft(data-wow-delay='0.1s')
+            .timeline-text
+              .timeline-date 2045 - 2050
+              h2 Web Developer
+              h4 Soft Agency, San Francisco, CA
+              p
+                | Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+          .timeline-item.right.wow.slideInRight(data-wow-delay='0.1s')
+            .timeline-text
+              .timeline-date 2045 - 2050
+              h2 Web Developer
+              h4 Soft Agency, San Francisco, CA
+              p
+                | Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+          .timeline-item.left.wow.slideInLeft(data-wow-delay='0.1s')
+            .timeline-text
+              .timeline-date 2045 - 2050
+              h2 Web Developer
+              h4 Soft Agency, San Francisco, CA
+              p
+                | Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+          .timeline-item.right.wow.slideInRight(data-wow-delay='0.1s')
+            .timeline-text
+              .timeline-date 2045 - 2050
+              h2 Web Developer
+              h4 Soft Agency, San Francisco, CA
+              p
+                | Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+    // Job Experience End
+    // Banner Start
+    .banner.wow.zoomIn(data-wow-delay='0.1s')
+      .container
+        .section-header.text-center
+          p Reasonable Price
+          h2 Get A 
+            span Special
+            | Price
+        .container.banner-text
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.
+          a.btn Pricing Plan
+    // Banner End
+    // Portfolio Start
+    #portfolio.portfolio
+      .container
+        .section-header.text-center.wow.zoomIn(data-wow-delay='0.1s')
+          p My Portfolio
+          h2 My Excellent Portfolio
+        .row
+          .col-12
+            ul#portfolio-filter
+              li.filter-active(data-filter='*') All
+              li(data-filter='.filter-1') Web Design
+              li(data-filter='.filter-2') Mobile Apps
+              li(data-filter='.filter-3') Game Dev
+        .row.portfolio-container
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-1.wow.fadeInUp(data-wow-delay='0.0s')
+            .portfolio-wrap
+              .portfolio-img
+                img(src='img/portfolio-1.jpg' alt='Image')
+              .portfolio-text
+                h3 eCommerce Website
+                a.btn(href='img/portfolio-1.jpg' data-lightbox='portfolio') +
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-2.wow.fadeInUp(data-wow-delay='0.2s')
+            .portfolio-wrap
+              .portfolio-img
+                img(src='img/portfolio-2.jpg' alt='Image')
+              .portfolio-text
+                h3 Product Landing Page
+                a.btn(href='img/portfolio-2.jpg' data-lightbox='portfolio') +
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-3.wow.fadeInUp(data-wow-delay='0.4s')
+            .portfolio-wrap
+              .portfolio-img
+                img(src='img/portfolio-3.jpg' alt='Image')
+              .portfolio-text
+                h3 JavaScript quiz game
+                a.btn(href='img/portfolio-3.jpg' data-lightbox='portfolio') +
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-1.wow.fadeInUp(data-wow-delay='0.6s')
+            .portfolio-wrap
+              .portfolio-img
+                img(src='img/portfolio-4.jpg' alt='Image')
+              .portfolio-text
+                h3 JavaScript drawing
+                a.btn(href='img/portfolio-4.jpg' data-lightbox='portfolio') +
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-2.wow.fadeInUp(data-wow-delay='0.8s')
+            .portfolio-wrap
+              .portfolio-img
+                img(src='img/portfolio-5.jpg' alt='Image')
+              .portfolio-text
+                h3 Social Mobile Apps
+                a.btn(href='img/portfolio-5.jpg' data-lightbox='portfolio') +
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-3.wow.fadeInUp(data-wow-delay='1s')
+            .portfolio-wrap
+              .portfolio-img
+                img(src='img/portfolio-6.jpg' alt='Image')
+              .portfolio-text
+                h3 Company Website
+                a.btn(href='img/portfolio-6.jpg' data-lightbox='portfolio') +
+    // Portfolio End
+    // Banner Start
+    .banner.wow.zoomIn(data-wow-delay='0.1s')
+      .container
+        .section-header.text-center
+          p Awesome Discount
+          h2 Get 
+            span 30%
+            | Discount
+        .container.banner-text
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.
+          a.btn Order Now
+    // Banner End
+    // Price Start
+    #price.price
+      .container
+        .section-header.text-center.wow.zoomIn(data-wow-delay='0.1s')
+          p Pricing Plan
+          h2 Affordable Price
+        .row
+          .col-md-4.wow.fadeInUp(data-wow-delay='0.5s')
+            .price-item
+              .price-header
+                .price-title
+                  h2 Basic
+                .price-prices
+                  h2
+                    small $
+                    | 49
+                    span / mo
+              .price-body
+                .price-description
+                  ul
+                    li Bootstrap 4
+                    li Font Awesome 5
+                    li Responsive Design
+                    li Browser Compatibility
+                    li Easy To Use
+              .price-footer
+                .price-action
+                  a.btn(href='') Order Now
+          .col-md-4.wow.fadeInUp(data-wow-delay='0.0s')
+            .price-item.featured-item
+              .price-header
+                .price-title
+                  h2 Standard
+                .price-prices
+                  h2
+                    small $
+                    | 99
+                    span / mo
+              .price-body
+                .price-description
+                  ul
+                    li Bootstrap 4
+                    li Font Awesome 5
+                    li Responsive Design
+                    li Browser Compatibility
+                    li Easy To Use
+              .price-footer
+                .price-action
+                  a.btn(href='') Order Now
+          .col-md-4.wow.fadeInUp(data-wow-delay='0.5s')
+            .price-item
+              .price-header
+                .price-title
+                  h2 Premium
+                .price-prices
+                  h2
+                    small $
+                    | 149
+                    span / mo
+              .price-body
+                .price-description
+                  ul
+                    li Bootstrap 4
+                    li Font Awesome 5
+                    li Responsive Design
+                    li Browser Compatibility
+                    li Easy To Use
+              .price-footer
+                .price-action
+                  a.btn(href='') Order Now
+    // Price End
+    // Testimonial Start
+    #review.testimonial.wow.fadeInUp(data-wow-delay='0.1s')
+      .container
+        .testimonial-icon
+          i.fa.fa-quote-left
+        .owl-carousel.testimonials-carousel
+          .testimonial-item
+            .testimonial-img
+              img(src='img/testimonial-1.jpg' alt='Image')
+            .testimonial-text
+              p
+                | Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+              h3 Customer Name
+              h4 Profession
+          .testimonial-item
+            .testimonial-img
+              img(src='img/testimonial-2.jpg' alt='Image')
+            .testimonial-text
+              p
+                | Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+              h3 Customer Name
+              h4 Profession
+          .testimonial-item
+            .testimonial-img
+              img(src='img/testimonial-3.jpg' alt='Image')
+            .testimonial-text
+              p
+                | Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+              h3 Customer Name
+              h4 Profession
+    // Testimonial End
+    // Team Start
+    #team.team
+      .container
+        .section-header.text-center.wow.zoomIn(data-wow-delay='0.1s')
+          p My Team
+          h2 Expert Team Members
+        .row
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.0s')
+            .team-item
+              .team-img
+                img(src='img/team-1.jpg' alt='Image')
+              .team-text
+                h2 Mollie Ross
+                h4 Web Designer
+                p
+                  | Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                .team-social
+                  a.btn(href='')
+                    i.fab.fa-twitter
+                  a.btn(href='')
+                    i.fab.fa-facebook-f
+                  a.btn(href='')
+                    i.fab.fa-linkedin-in
+                  a.btn(href='')
+                    i.fab.fa-instagram
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.2s')
+            .team-item
+              .team-img
+                img(src='img/team-2.jpg' alt='Image')
+              .team-text
+                h2 Dylan Adams
+                h4 Web Developer
+                p
+                  | Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                .team-social
+                  a.btn(href='')
+                    i.fab.fa-twitter
+                  a.btn(href='')
+                    i.fab.fa-facebook-f
+                  a.btn(href='')
+                    i.fab.fa-linkedin-in
+                  a.btn(href='')
+                    i.fab.fa-instagram
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.4s')
+            .team-item
+              .team-img
+                img(src='img/team-3.jpg' alt='Image')
+              .team-text
+                h2 Jennifer Page
+                h4 Apps Designer
+                p
+                  | Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                .team-social
+                  a.btn(href='')
+                    i.fab.fa-twitter
+                  a.btn(href='')
+                    i.fab.fa-facebook-f
+                  a.btn(href='')
+                    i.fab.fa-linkedin-in
+                  a.btn(href='')
+                    i.fab.fa-instagram
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.6s')
+            .team-item
+              .team-img
+                img(src='img/team-4.jpg' alt='Image')
+              .team-text
+                h2 Josh Dunn
+                h4 Apps Developer
+                p
+                  | Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                .team-social
+                  a.btn(href='')
+                    i.fab.fa-twitter
+                  a.btn(href='')
+                    i.fab.fa-facebook-f
+                  a.btn(href='')
+                    i.fab.fa-linkedin-in
+                  a.btn(href='')
+                    i.fab.fa-instagram
+    // Team End
+    // Contact Start
+    #contact.contact.wow.fadeInUp(data-wow-delay='0.1s')
+      .container-fluid
+        .container
+          .row.align-items-center
+            .col-md-4
+            .col-md-8
+              .contact-form
+                #success
+                form#contactForm(name='sentMessage' novalidate='novalidate')
+                  .control-group
+                    input#name.form-control(type='text' placeholder='Your Name' required='required' data-validation-required-message='Please enter your name')
+                    p.help-block
+                  .control-group
+                    input#email.form-control(type='email' placeholder='Your Email' required='required' data-validation-required-message='Please enter your email')
+                    p.help-block
+                  .control-group
+                    input#subject.form-control(type='text' placeholder='Subject' required='required' data-validation-required-message='Please enter a subject')
+                    p.help-block
+                  .control-group
+                    textarea#message.form-control(placeholder='Message' required='required' data-validation-required-message='Please enter your message')
+                    p.help-block
+                  div
+                    button#sendMessageButton.btn(type='submit') Send Message
+    // Contact End
+    // Blog Start
+    #blog.blog
+      .container
+        .section-header.text-center.wow.zoomIn(data-wow-delay='0.1s')
+          p From Blog
+          h2 Latest Articles
+        .row
+          .col-lg-6
+            .blog-item.wow.fadeInUp(data-wow-delay='0.1s')
+              .blog-img
+                img(src='img/blog-1.jpg' alt='Blog')
+              .blog-text
+                h2 Lorem ipsum dolor sit amet
+                .blog-meta
+                  p
+                    i.far.fa-user
+                    | Admin
+                  p
+                    i.far.fa-list-alt
+                    | Web Design
+                  p
+                    i.far.fa-calendar-alt
+                    | 01-Jan-2045
+                  p
+                    i.far.fa-comments
+                    | 5
+                p
+                  | Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
+                a.btn(href='') Read More 
+                  i.fa.fa-angle-right
+          .col-lg-6
+            .blog-item.wow.fadeInUp(data-wow-delay='0.3s')
+              .blog-img
+                img(src='img/blog-2.jpg' alt='Blog')
+              .blog-text
+                h2 Lorem ipsum dolor sit amet
+                .blog-meta
+                  p
+                    i.far.fa-user
+                    | Admin
+                  p
+                    i.far.fa-list-alt
+                    | Apps Design
+                  p
+                    i.far.fa-calendar-alt
+                    | 01-Jan-2045
+                  p
+                    i.far.fa-comments
+                    | 10
+                p
+                  | Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
+                a.btn(href='') Read More 
+                  i.fa.fa-angle-right
+    // Blog End
+    // Footer Start
+    .footer.wow.fadeIn(data-wow-delay='0.3s')
+      .container-fluid
+        .container
+          .footer-info
+            h2 Kate Winslet
+            h3 123 Street, New York, USA
+            .footer-menu
+              p +012 345 67890
+              p info@example.com
+            .footer-social
+              a(href='')
+                i.fab.fa-twitter
+              a(href='')
+                i.fab.fa-facebook-f
+              a(href='')
+                i.fab.fa-youtube
+              a(href='')
+                i.fab.fa-instagram
+              a(href='')
+                i.fab.fa-linkedin-in
+        .container.copyright
+          p &copy; 
+            a(href='#') Your Site Name
+            | , All Right Reserved | Designed By
+            a(href='https://htmlcodex.com') HTML Codex
+    // Footer End
+    // Back to top button
+    a.btn.back-to-top(href='#')
+      i.fa.fa-chevron-up
+    // Pre Loader
+    #loader.show
+      .loader
+    // JavaScript Libraries
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js')
+    script(src='lib/easing/easing.min.js')
+    script(src='lib/wow/wow.min.js')
+    script(src='lib/waypoints/waypoints.min.js')
+    script(src='lib/typed/typed.min.js')
+    script(src='lib/owlcarousel/owl.carousel.min.js')
+    script(src='lib/isotope/isotope.pkgd.min.js')
+    script(src='lib/lightbox/js/lightbox.min.js')
+    // Contact Javascript File
+    script(src='mail/jqBootstrapValidation.min.js')
+    script(src='mail/contact.js')
+    // Template Javascript
+    script(src='js/main.js')

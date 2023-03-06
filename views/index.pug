@@ -1,0 +1,565 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title BhargavaGidijala - Portfolio
+    meta(content='width=device-width, initial-scale=1.0' name='viewport')
+    meta(content='Free Website Template' name='keywords')
+    meta(content='Free Website Template' name='description')
+    // Favicon
+    link(href='images/favicon.ico' rel='icon')
+    // Google Font
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap' rel='stylesheet')
+    // CSS Libraries
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' rel='stylesheet')
+    link(href='stylesheets/animate/animate.min.css' rel='stylesheet')
+    link(href='stylesheets/owlcarousel/assets/owl.carousel.min.css' rel='stylesheet')
+    link(href='stylesheets/lightbox/css/lightbox.min.css' rel='stylesheet')
+    // Template Stylesheet
+    link(href='stylesheets/style.css' rel='stylesheet')
+  body(data-spy='scroll' data-target='.navbar' data-offset='51')
+    // Nav Bar Start
+    .navbar.navbar-expand-lg.bg-light.navbar-light
+      .container-fluid
+        a.navbar-brand(href='index.pug') Portfolio
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarCollapse')
+          span.navbar-toggler-icon
+        #navbarCollapse.collapse.navbar-collapse.justify-content-between
+          .navbar-nav.ml-auto
+            a.nav-item.nav-link.active(href='#home') Home
+            a.nav-item.nav-link(href='#about') About
+            a.nav-item.nav-link(href='#service') My interests
+            a.nav-item.nav-link(href='#experience') My projects
+            a.nav-item.nav-link(href='#portfolio') Portfolio
+            a.nav-item.nav-link(href='#review') Review
+            a.nav-item.nav-link(href='#team') Team
+            a.nav-item.nav-link(href='#contact') Contact
+    // Nav Bar End
+    // Hero Start
+    #home.hero
+      .container-fluid
+        .row.align-items-center
+          .col-sm-12.col-md-6
+            .hero-content
+              .hero-text
+                p I'm
+                h1 Bhargava Ramana Gidijala
+                h2
+                .typed-text Full-Stack developer, Web Designer, Front End Developer, Database
+              .hero-btn
+                a.btn(href='#') Hire Me
+                a.btn(href='#') Contact Me
+          .col-sm-12.col-md-6.d-none.d-md-block
+            .hero-image
+              img(src='images/hero.png' alt='Hero Image')
+    // Hero End
+    // About Start
+    #about.about.wow.fadeInUp(data-wow-delay='0.1s')
+      .container-fluid
+        .row.align-items-center
+          .col-md-6.d-flex.justify-content-center
+            .about-img
+              img(src='images/about.png' alt='Image')
+          .col-lg-6
+            .about-content
+              .section-header.text-left
+                p About Me
+                h2 Fresher
+              .about-text
+                p
+                  | Graduated in Master of Computer Applications in the field of computer science from JNTUK University. Has good knowledge in designing and developing Web-Applications
+              .skills
+                .skill-name
+                  p HTML
+                  p 85%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100')
+
+                .skill-name
+                  p CSS
+                  p 80%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100')
+
+                .skill-name
+                  p JavaScript
+                  p 70%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100')
+                  
+                .skill-name
+                  p Python
+                  p 65%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='65' aria-valuemin='0' aria-valuemax='100')
+                  
+                .skill-name
+                  p Nodejs
+                  p 75%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100')
+                  
+                .skill-name
+                  p Expressjs
+                  p 70%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100')
+                  
+                //- .skill-name
+                //-   p Reactjs
+                //-   p 65%
+                //- .progress
+                //-   .progress-bar(role='progressbar' aria-valuenow='65' aria-valuemin='0' aria-valuemax='100')
+                  
+                .skill-name
+                  p MongoDB
+                  p 70%
+                .progress
+                  .progress-bar(role='progressbar' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100')
+    // About End
+    // Service Start
+    #service.service
+      .container
+        .section-header.text-center.wow.zoomIn(data-wow-delay='0.1s')
+          p What I do
+          h2 My interests
+        .row
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.0s')
+            .service-item
+              .service-icon
+                i.fa.fa-laptop-code
+              .service-text
+                h3 Web Design
+                p
+                  | Creating awesome and responsive web applications.
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.2s')
+            .service-item
+              .service-icon
+                i.fas.fa-database
+              .service-text
+                h3 Database
+                p
+                  | Knowledge on working with databases like SQLite, MongoDB
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.4s')
+            .service-item
+              .service-icon
+                i.fab.fa-python
+              .service-text
+                h3 Backend development
+                p
+                  | Knowledge on working with backend coding like Python and Expressjs
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.6s')
+            .service-item
+              .service-icon
+                i.fab.fa-react
+              .service-text
+                h3 Web apps using ReactJS*
+                p
+                  | Currently pursuing 
+    // Service End
+    // Experience Start
+    #experience.experience
+      .container
+        header.section-header.text-center.wow.zoomIn(data-wow-delay='0.1s')
+          p My Projects
+          h2 On Web Applications
+        .timeline
+          
+          .timeline-item.left.wow.slideInLeft(data-wow-delay='0.1s')
+            .timeline-text.shadow-lg
+              .timeline-date June 2021 - June 2021
+              h2 Online Food Delivery
+              h5 <b class="technologies">Technologies : </b>HTML, CSS, Bootstrap
+              p
+                <b class="technologies">Description : </b> Users can make orders on selected items, Make payments and Search food items to place an order.
+              a(href="https://gbr-fooddelivery-app.herokuapp.com/") Project link
+
+          .timeline-item.right.wow.slideInRight(data-wow-delay='0.1s')
+            .timeline-text.shadow-lg
+              .timeline-date Jan 2021 - Jan 2021
+              h2 Live Cryptocurrency
+              h5 <b class="technologies">Technologies : </b>HTML, CSS, Bootstrap, Javascript
+              p
+                <b class="technologies">Description : </b> User can get the current bitcoin value around the world.
+              a(href="https://gbr-cryptocurrency-app.herokuapp.com/") Project link
+
+          .timeline-item.left.wow.slideInLeft(data-wow-delay='0.1s')
+            .timeline-text.shadow-lg
+              .timeline-date Sep 2020 - Nov 2020
+              h2 Personal website
+              h5 <b class="technologies">Technologies : </b>HTML(pug), CSS, Bootstrap, JavaScript, MongoDB Atlas, NodeJS
+              p
+                <b class="technologies">Description : </b> When user enters into this application by providing his username and mail, the data will be stored in mongoDB atlas database where we(admin) can see no of users logged in. 'About me' page consists information about desginer of site, a todo application where we can add, transfer, check all the tasks. An event calendar to save our events on specified date. In 'education page' we can view the content and download subjects as PDF. 'Gallery page' contains wallpapers, quotes, etc.. with an option to download. 'Games' page contains online games like 'Snake and food', '2048', 'Arrow shooting', 'Bird shooting', 'Tic-tac-toe'. Finally 'Covid19-live page' containing data of current cases, deaths and total recovered data around the world as well as individual countries in a tabular format.
+              a(href="http://gbr-pweb.herokuapp.com/") Project link
+
+          .timeline-item.right.wow.slideInRight(data-wow-delay='0.1s')
+            .timeline-text.shadow-lg
+              .timeline-date Dec 2019 - Mar 2020
+              h2 Mobile Seized data storage and retrieval 
+              h5 <b class="technologies">Technologies : </b>HTML(pug), CSS, Bootstrap, JavaScript, MongoDB Atlas, NodeJS, ExpressJS, Angular for sign-in page.
+              p
+                <b class="technologies">Description : </b> By giving valid credentials in login page, user is redirected to homepage of application displaying a dashboard that contains count of total mobiles seized, total mobiles returned. We can generate a billing statement as PDF by clicking on submit button after filling the form provided in the dashboard. User can make modifications to the individual data by searching with RollNo of student. User can also change status (office to returned) of seized mobile from the displayed table. Tabs like Contact and Help are included for further support.
+              a(href="https://gbr-mobileseize.herokuapp.com/") Project link
+    // Job Experience End
+    // Portfolio Start
+    #portfolio.portfolio
+      .container
+        .section-header.text-center.wow.zoomIn(data-wow-delay='0.1s')
+          p Website Links
+          h2 My Projects Demo
+        .row
+          .col-12
+            ul#portfolio-filter.d-flex.justify-content-between.flex-wrap
+              li.flex-grow-1.filter-active(data-filter='*') All
+              li.flex-grow-1(data-filter='.filter-1') Responsive WebApplication
+              li.flex-grow-1(data-filter='.filter-2') Non-Responsive WebApplication
+              li.flex-grow-1(data-filter='.filter-3') Online Games
+              li.flex-grow-1(data-filter='.filter-4') Under working*
+
+        .row.portfolio-container
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-1.wow.fadeInUp(data-wow-delay='0.0s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/fooddelivery-sc.png' alt='Image')
+              .portfolio-text
+                h3 Online Food Delivery
+                a.btn(href='https://gbr-fooddelivery-app.herokuapp.com/') +
+
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-1.wow.fadeInUp(data-wow-delay='0.2s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/cryptocurrency-sc.png' alt='Image')
+              .portfolio-text
+                h3 Cryptocurrency
+                a.btn(href='https://gbr-cryptocurrency-app.herokuapp.com/') +
+
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-1.wow.fadeInUp(data-wow-delay='0.2s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/covid19-sc.png' alt='Image')
+              .portfolio-text
+                h3 Covid19 - Status
+                a.btn(href="https://gbr-pweb.herokuapp.com/covid") +
+
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-2.wow.fadeInUp(data-wow-delay='0.4s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/mobileseize-sc.png' alt='Image')
+              .portfolio-text
+                h3 Mobile seize application
+                a.btn(href='https://gbr-mobileseize.herokuapp.com/') +
+
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-2.wow.fadeInUp(data-wow-delay='0.6s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/pweb-sc.png' alt='Image')
+              .portfolio-text
+                h3 Personal Website
+                a.btn(href='https://gbr-pweb.herokuapp.com/') +
+
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-3.wow.fadeInUp(data-wow-delay='0.8s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/snake-game-sc.png' alt='Image')
+              .portfolio-text
+                h3 Snake and food
+                a.btn(href='https://gbr-pweb.herokuapp.com/Snake_game') +
+
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-3.wow.fadeInUp(data-wow-delay='1s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/arrow-shooting-sc.png' alt='Image')
+              .portfolio-text
+                h3 Arrow shooting
+                a.btn(href='https://gbr-pweb.herokuapp.com/BullsEye ') +   
+
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-3.wow.fadeInUp(data-wow-delay='1s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/bird-shooting-sc.png' alt='Image')
+              .portfolio-text
+                h3 Bird shooting
+                a.btn(href='https://gbr-pweb.herokuapp.com/BirdShooting_game') +   
+
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-3.wow.fadeInUp(data-wow-delay='1s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/2048-sc.png' alt='Image')
+              .portfolio-text
+                h3 2048
+                a.btn(href='https://gbr-pweb.herokuapp.com/2048_game') +   
+
+          .col-lg-4.col-md-6.col-sm-12.portfolio-item.filter-3.wow.fadeInUp(data-wow-delay='1s')
+            .portfolio-wrap.shadow-lg
+              .portfolio-img
+                img(src='images/tic-tac-toe-sc.png' alt='Image')
+              .portfolio-text
+                h3 Tic-Tac-Toe
+                a.btn(href='https://gbr-pweb.herokuapp.com/TicTacToe') +  
+    // Portfolio End
+    // Testimonial Start
+    #review.testimonial.wow.fadeInUp(data-wow-delay='0.1s')
+      .container
+        .testimonial-icon
+          i.fa.fa-quote-left
+        .owl-carousel.testimonials-carousel
+          .testimonial-item
+            .testimonial-img
+              img(src='images/vasantha.jpg' alt='Image')
+            .testimonial-text
+              p
+                | Bhargava is a creative designer and hardworker. He always seeks for perfection in work.
+              h3 Vasantha lakshmi
+              h4 Analyst from ABC
+          .testimonial-item
+            .testimonial-img
+              img(src='images/vijay.png' alt='Image')
+            .testimonial-text
+              p
+                | He Designs user friendly applications with Creative and excellent outcome.
+              h3 Vijay Kumar
+              h4 Programmer at XYZ
+          .testimonial-item
+            .testimonial-img
+              img(src='images/testimonial-3.jpg' alt='Image')
+            .testimonial-text
+              p
+                | Desiging websites in both mobile and pc screen with responsive is not an easy thing, It requies lot of hardwork and patience for a fresher. Im happy to see you for designing wonderful websites.
+              h3 Pallavi siri
+              h4 Student
+    // Testimonial End
+    // Team Start
+    #team.team
+      .container
+        .section-header.text-center.wow.zoomIn(data-wow-delay='0.1s') 
+          h2 My Hobbies
+        .row
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.0s')
+            .team-item
+              .team-img.col-6
+                img(src='images/webdesign.jpg' alt='Image')
+              .team-text.col-6
+                h2 Designing
+                h4 Web-apps
+                p
+                  | Interested in designing and hosting web applications.
+                .team-social
+                  a.btn(href='')
+                    i.fab.fa-twitter
+                  a.btn(href='')
+                    i.fab.fa-facebook-f
+                  a.btn(href='')
+                    i.fab.fa-linkedin-in
+                  a.btn(href='')
+                    i.fab.fa-instagram
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.2s')
+            .team-item
+              .team-img.col-6
+                img(src='images/technology.jpg' alt='Image')
+              .team-text.col-6
+                h2 Tech videos
+                h4 Lastest Technologies
+                p
+                  | Watching technology related videos, latest gadgets etc.
+                .team-social
+                  a.btn(href='')
+                    i.fab.fa-twitter
+                  a.btn(href='')
+                    i.fab.fa-facebook-f
+                  a.btn(href='')
+                    i.fab.fa-linkedin-in
+                  a.btn(href='')
+                    i.fab.fa-instagram
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.4s')
+            .team-item
+              .team-img.col-6
+                img(src='images/makingcrafts.jpg' alt='Image')
+              .team-text.col-6
+                h2 Designing
+                h4 Craft works
+                p
+                  | Making craft works like Quilling arts, Silk thread bangles etc.
+                .team-social
+                  a.btn(href='')
+                    i.fab.fa-twitter
+                  a.btn(href='')
+                    i.fab.fa-facebook-f
+                  a.btn(href='')
+                    i.fab.fa-linkedin-in
+                  a.btn(href='')
+                    i.fab.fa-instagram
+          .col-lg-6.wow.fadeInUp(data-wow-delay='0.6s')
+            .team-item
+              .team-img.col-6
+                img(src='images/drawings.jpg' alt='Image')
+              .team-text.col-6
+                h2 Drawing
+                h4 Pencil arts
+                p
+                  | Drawing and Sketching arts by hand and shading them with pencil.
+                .team-social
+                  a.btn(href='')
+                    i.fab.fa-twitter
+                  a.btn(href='')
+                    i.fab.fa-facebook-f
+                  a.btn(href='')
+                    i.fab.fa-linkedin-in
+                  a.btn(href='')
+                    i.fab.fa-instagram
+    // Team End
+    // Contact Start
+    #contact.contact.wow.fadeInUp(data-wow-delay='0.1s')
+      .container-fluid
+        .container
+          .row.align-items-center
+            .col-md-4
+            .col-md-8
+              .contact-form
+                #success
+                form#contactForm(name='sentMessage' novalidate='novalidate')
+                  .control-group
+                    input#name.form-control(type='text' placeholder='Your Name' required='required' data-validation-required-message='Please enter your name')
+                    p.help-block
+                  .control-group
+                    input#email.form-control(type='email' placeholder='Your Email' required='required' data-validation-required-message='Please enter your email')
+                    p.help-block
+                  .control-group
+                    input#subject.form-control(type='text' placeholder='Subject' required='required' data-validation-required-message='Please enter a subject')
+                    p.help-block
+                  .control-group
+                    textarea#message.form-control(placeholder='Message' required='required' data-validation-required-message='Please enter your message')
+                    p.help-block
+                  div
+                    button#sendMessageButton.btn(type='submit') Send Message
+    // Contact End
+    // Footer Start
+    .footer.wow.fadeIn(data-wow-delay='0.3s')
+      .container-fluid
+        .container
+          .footer-info
+            h2 Bhargava Ramana Gidijala
+            h3 Ramarao Peta, Andhra Pradesh, India
+            .footer-menu
+              p 9493818156
+              p mcababu1820@gmail.com
+            .footer-social
+              a(href='')
+                i.fab.fa-twitter
+              a(href='')
+                i.fab.fa-facebook-f
+              a(href='')
+                i.fab.fa-youtube
+              a(href='')
+                i.fab.fa-instagram
+              a(href='')
+                i.fab.fa-linkedin-in
+        .container.copyright
+          p &copy; 
+            a(href='#') gbr-portfolio
+            | , All Right Reserved | Designed By 
+            a(href='#') <b>" Bhargava Gidijala "</b>
+    // Footer End
+    // Back to top button
+    a.btn.back-to-top(href='#')
+      i.fa.fa-chevron-up
+    // Pre Loader
+    #loader.show
+      .loader
+    // JavaScript Libraries
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js')
+    script(src='stylesheets/easing/easing.min.js')
+    script(src='stylesheets/wow/wow.min.js')
+    script(src='stylesheets/waypoints/waypoints.min.js')
+    script(src='stylesheets/typed/typed.min.js')
+    script(src='stylesheets/owlcarousel/owl.carousel.min.js')
+    script(src='stylesheets/isotope/isotope.pkgd.min.js')
+    script(src='stylesheets/lightbox/js/lightbox.min.js')
+    // Contact Javascript File
+    script(src='mail/jqBootstrapValidation.min.js')
+    script(src='mail/contact.js')
+    // Template Javascript
+    script(src='javascripts/main.js')
+    
+    //- script.
+      //- var iconMenu = document.querySelector('#Submit'),
+      var menu = document.querySelector('.menu');
+      var menuLink = document.querySelectorAll('.menu-link.sub');
+
+      //- menu.addEventListener(openMenu());
+      window.onload = openMenu();
+      function openMenu() 
+      {
+        if(menu.classList.contains('open')) 
+        {
+          menu.classList.add('close');
+          //- classList.remove('icon-closed');
+          setTimeout(function() 
+          {
+            menu.classList.remove('open');
+          }, 1300);
+        } 
+        else
+        {
+          menu.classList.remove('close');
+          menu.classList.add('open');
+          //- classList.add('icon-closed');
+        }
+      }
+
+      menuLink.forEach(function(el) {
+      el.addEventListener('click', openSubmenu);
+      });
+      function openSubmenu(event) {
+      if (event.currentTarget.classList.contains("active")) {
+      event.currentTarget.classList.remove("active");
+      } else {
+      event.currentTarget.classList.add("active");
+      }
+      }
+
+   
+      window.onload = function() {
+      document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+      }, false);
+      document.addEventListener("keydown", function(e) {
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+      alert('not allowed');
+      disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+      alert('not allowed');
+      disabledEvent(e);
+      }
+      }, false);
+      function disabledEvent(e){
+      if (e.stopPropagation){
+      e.stopPropagation();
+      } else if (window.event){
+      window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+      }
+      };
+      
+  
+      document.onkeydown = function(e) 
+      {
+        if(e.ctrlKey && 
+          (e.keyCode === 67 || 
+          e.keyCode === 86 || 
+          e.keyCode === 73 || 
+          e.keyCode === 85 || 
+          e.keyCode === 117)) {
+            alert('not allowed');
+          return false;
+          }
+          else {
+            return true;
+          }
+      };
